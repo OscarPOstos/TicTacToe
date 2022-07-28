@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Sogtric";
+    src: url("../assets/fonts/Sogtric-Outline.otf");
+}
+
+@font-face {
+    font-family: "Sogtric-R";
+    src: url("../assets/fonts/Sogtric.otf");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    font-family: "Sogtric";
+    color: yellow;
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    font-family: "Sogtric-R";
+    color: white;
+}
+
+nav img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.game {
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 30px;
+    width: fit-content;
+    box-shadow: 0px 0px 10px white;
+}
+
+.board {
+    border-collapse: collapse;
+}
+
+.square {
+    border: 10px solid yellow;
+    border-style: double;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 0px;
+    font-family: "Sogtric-R";
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.right {
+    border-right: 0px;
+}
+
+.left {
+    border-left: 0px;
+}
+
+.top {
+    border-top: 0px;
+}
+
+.bottom {
+    border-bottom: 0px;
+}
+
+.stats {
+    text-align: center;
+    margin: 30px;
+    text-shadow: 0px 0px 2.5px rgb(251, 251, 213);
+}
+
+.score {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+#tie {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 500px) {
+    .square {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        padding-left: 4px;
+        padding-top: 4px;
+        border-width: 3px;
+    }
+
+    .stats {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <nav>
+        <img src="assets/images/cpu.png" alt="cpu icon" width="30px" id="cpu_button">
+        <img src="assets/images/user.png" alt="user icon" width="30px" id="two_button">
+    </nav>
+    <div class="game">
+        <table class="board">
+            <tr>
+                <td class="square top left"></td>
+                <td class="square top"></td>
+                <td class="square top right"></td>
+            </tr>
+            <tr>
+                <td class="square left"></td>
+                <td class="square"></td>
+                <td class="square right"></td>
+            </tr>
+            <tr>
+                <td class="square bottom left"></td>
+                <td class="square bottom"></td>
+                <td class="square bottom right"></td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="stats">
+        <tr>
+        <td>
+            <p>jugador(X)</p>
+        </td>
+        <td>
+            <p>-</p>
+        </td>
+        <td>
+            <p>jugador(O)</p>
+        </td>
+        <td></td>
+        </tr>
+        <tr class="score">
+            <td id="j1">
+                0
+            </td>
+            <td id="tie">
+                0
+            </td>
+            <td id="j2">
+                0
+            </td>
+        </tr>
+    </div>
+    <script src="Script/script.js"></script>
+</body>
+</html>
